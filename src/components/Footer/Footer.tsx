@@ -7,11 +7,9 @@ import Typography from "@mui/material/Typography";
 import styles from "./Footer.module.scss";
 
 const Footer = () => {
-  const year = new Date().getFullYear();
-
   return (
     <footer className={styles.footer}>
-      <Typography>@{year} PhotoGallery</Typography>
+      <Typography>@{new Date().getFullYear()} PhotoGallery</Typography>
       <Stack direction="row" justifyContent="center">
         <IconButton color="secondary">
           <Link href={"https://www.facebook.com/"}>
